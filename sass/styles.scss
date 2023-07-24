@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("../assets/fonts//TT\ Lakes\ Regular.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'TT Lakes';
+}
+
+@import "header";
+@import "burger";
+@import "services";
+@import "nav";
+@import "info";
+@import "container";
+@import "scroll";
+@import "title";
+@import "content-info";
+@import "footer";
