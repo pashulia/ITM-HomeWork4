@@ -1,6 +1,9 @@
+@import 'media';
 .container {
     display: flex;
     background-color: #f8f8f8;
-
-    
+    @include desktop {
+        margin-left: 465px;
+        width: 100%;
+    }
 }

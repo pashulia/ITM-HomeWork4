@@ -1,34 +1,56 @@
+@import 'media';
+@import 'variables';
 .nav {
     display: flex;
     align-items: center;
     background: #fff;
-
-    // &__burger {
-    //     border: none;
-    //     background-color: #fff
-    // }
-
     &__burger {
-        border-right: 1px solid #fff;
-        margin-right: 18px;
+        padding-right: 18px;
+        @include iPad {
+            border-right: 1px solid #eaeaea;
+        }
     }
     &__logo {
         border-right: 1px solid #eaeaea;
         padding-right: 18px;
+        @include iPad {
+            border: none;
+            padding-left: 18px;
+        }
+        
     }
     &__phone {
         display: none;
+        @include iPad {
+            margin-left: auto;
+            display: block;
+            padding-left: 20px;
+        }
     }
     &__chat {
         display: none;
+        @include iPad {
+            display: block;
+            padding-left: 20px;
+        }
     }
     &__user {
         display: none;
+        @include iPad {
+            display: block;
+            padding: 0 20px;
+            border-right: 1px solid #eaeaea;
+        }
     }
     &__repairs {
         padding-left: 20px;
+        @include iPad {
+            display: block;
+            padding-left: 20px;
+        }
     }
     &__status {
         padding-left: 16px;
+        
     }
 }

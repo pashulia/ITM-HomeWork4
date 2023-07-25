@@ -1,26 +1,35 @@
+@import 'variables';
+@import 'media';
 .services {
-    background: #F8F8F8;
+    background: $grey1;
     margin: 0;
     padding: 0;
     max-width: 288px;
     padding-left: 16px;
-
+    @include iPad {
+        max-width: 750px;
+    }
+    @include desktop {
+        max-width: 1104px;
+    }
     &__title {
         position: relative;
         width: 310px;
         height: 80px;
-        background: linear-gradient(270deg, #FFF 0%, #F8F8F8 100%);
+        background: $gradient;
+        @include iPad {
+            width: 765px;
+            height: 56px;
+        }
+        @include desktop {
+            width: 1120px;
+        }
     }
-    
     &__title_text {
         position: absolute;
         top: 30%;
         color: #7E7E82;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: -0.2px;
+        @include font-style(16px, 400, 24px, -0.2px);
         text-transform: uppercase;
         padding-bottom: 30px;
     }
@@ -30,19 +39,55 @@
         white-space: nowrap;
         max-width: 288px;
         padding-top: 10px;
-    }
-    
-    &__list_card {
-        display: flex;
-        height: 72px;
-        flex-shrink: 0;
-        border-radius: 6px;
-        border: 1px solid #EAEAEA;
-        background: #FFF;
-        align-items: center;
-        justify-content: space-between;
-        margin: 8px;
-        padding: 0 16px;
+        @include iPad {
+            max-width: 765px;
+            padding-top: 5px;
+            flex-wrap: wrap;
+        }
+        @include desktop {
+            max-width: 1104px;
+            padding-top: 5px;
+            flex-wrap: wrap;
+        }
+        &_card {
+            @extend %flex_center;
+            height: 72px;
+            flex-shrink: 0;
+            @extend %border;
+            background: $white;
+            margin: 8px;
+            padding: 0 16px;
+            @include iPad {
+                width: 190px;
+            }
+            @include desktop {
+                width: 225px;
+            }
+        }
+        &_nav {
+            display: inline;
+            @include iPad {
+                display: none;
+            }
+        }
+        &_nav2 {
+            display: inline;
+        }
+        &_buttons {
+            display: none;
+            @include iPad {
+                display: inline-block;
+            }
+        }
+        &_buttons2 {
+            display: none;
+            @include iPad {
+                display: inline-block;
+            }
+            @include desktop {
+                display: none;
+            }
+        }
     }
     
     &__nav {
@@ -50,85 +95,97 @@
         margin-top: 5px;
         height: 20px;
         margin-bottom: 16px;
+        @include iPad {
+            display: none;
+        }
     }
-    &__list_nav {
-        display: inline;
-    }
-    &__list_nav2 {
-        display: inline;
-    }
+    
     &__cards {
         margin-top: 16px;
         display: flex;
         overflow-x: auto;
+        @include iPad {
+            flex-wrap: wrap;
+        }
     }
-    
     &__price {
-        margin-top: 16px;
-        display: flex;
-        overflow-x: auto;
+        @extend .services__cards;
     }
-    
     &__cards-item {
         position: relative;
         min-width: 240px;
         height: 160px;
-        border: 1px solid #eaeaea;
-        border-radius: 6px;
-        background-color: #fff;
+        @extend %border;
+        background-color: $white;
         padding: 16px;
         margin-right: 16px;
+        @include iPad {
+            min-width: 200px;
+            margin-bottom: 16px
+        }
+        @include desktop {
+            min-width: 215px;
+            margin-left: 10px;
+        }
     }
     
     &__cards-price {
         position: relative;
         min-width: 242px;
         height: 190px;
-        border: 1px solid #eaeaea;;
-        border-radius: 6px;
-        background-color: #fff;
+        @extend %border;
+        background-color: $white;
         padding: 16px 16px 0 16px;
         margin-right: 16px;
-        font-size: 14px;
-        line-height: 18px;
+        color: $black_text;
+        @include font-style(14px, 500, 18px, 0.2px);
+        @include iPad {
+            display: none;
+        }
     }
-    
     &__cards-item_link {
         position: absolute;
         bottom: 16px;
         right: 16px;
     }
-    
-    &__list_buttons {
-        display: none;
-    }
-
     &__container-list {
         display: none;
     }
-
     &__cards_flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @extend %flex_center;
+    }
+    &__tab {
+        display: none;
+        @include font-style(14px, 500, 18px, 0.2px);
+        text-align: left;
+        @include iPad {
+            display: block;
+        }
+        &_border-collapse {
+            border-collapse: collapse;
+            padding: 5px;
+            @include desktop {
+                width: 100%;
+            }
+        }
+        &_border {
+            padding: 16px 30px 16px 0;
+            border-bottom: 1px solid #777373;  
+        }
+
     }
 }
 
 .show-button,
 .hide-button {
-    color: #1B1C21;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+    @include font-style(16px, 500, 24px, -0.2px);
+    color: $black_text;
     margin-top: 10px; 
     padding: 10px 20px; 
-    background-color: #F8F8F8;
+    background-color: $grey1;
     border: none; 
     cursor: pointer;
 }
-
 .show-button:hover,
 .hide-button:hover {
     color: #777373;

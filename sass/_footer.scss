@@ -1,8 +1,35 @@
+@import 'media';
 .footer {
-    text-align: center;
     width: 288px;
     font-size: 14px;
     line-height: 16px;
     color: #7E7E82;
     margin-bottom: 16px;
+    padding: 16px;
+    @include iPad {
+        display: flex;
+        width: 752px;
+        justify-content: space-between;
+    }
+    @include desktop {
+        width: 1104px;
+    }
+    &__block_first {
+        text-align: center;
+        @include iPad {
+            width: 218px;
+            text-align: left;
+        }
+    }
+    &__block_last {
+        text-align: center;
+        @include iPad {
+            width: 213px;
+            text-align: right;
+            padding-right: 16px;
+        }
+        @include desktop {
+            width: 330px;
+        }
+    }
 }

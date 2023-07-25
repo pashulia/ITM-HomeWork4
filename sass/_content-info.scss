@@ -1,17 +1,19 @@
+@import 'media';
 .content-info {
     width: 288px;
     height: 192px;
     padding: 16px;
     font-size: 14px;
     line-height: 20px;
-
+    @include iPad {
+        width: 420px;
+    }
     &__text {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.20000000298023224px;
         text-align: left;
     }
-    
     &__btn {
         font-size: 16px;
         line-height: 24px;

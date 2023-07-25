@@ -3,6 +3,7 @@ let burger = document.querySelector('.burger');
 let exit = document.getElementById('exit');
 
 
+
 btnBurger.addEventListener('click', function(){
     burger.classList.remove('burger');
     burger.classList.add('burger__active');
@@ -11,6 +12,34 @@ btnBurger.addEventListener('click', function(){
 exit.addEventListener('click', function(){
     burger.classList.remove('burger__active');
     burger.classList.add('burger');
+})
+
+let btnCallBack = document.getElementById('showCallback');
+let callback = document.querySelector('.callback');
+let closedCallback = document.getElementById('closedCallback');
+
+btnCallBack.addEventListener('click', function(){
+    callback.classList.remove('callback');
+    callback.classList.add('callback__active');
+})
+
+closedCallback.addEventListener('click', function(){
+    callback.classList.remove('callback__active');
+    callback.classList.add('callback');
+})
+
+let btnCall = document.getElementById('callShow');
+let call = document.querySelector('.call');
+let closedCall = document.getElementById('callClosed');
+
+btnCallBack.addEventListener('click', function(){
+    call.classList.remove('call');
+    call.classList.add('call__active');
+})
+
+closedCallback.addEventListener('click', function(){
+    call.classList.remove('call__active');
+    call.classList.add('call');
 })
 
 // Получаем ссылки на элементы радио и меток
@@ -52,6 +81,8 @@ const servicesList = document.querySelector('.services__list');
         const servicesCards = document.querySelectorAll('.services__cards');
         const showButton = document.querySelector('.show-button');
         const hideButton = document.querySelector('.hide-button');
+        const showButton2 = document.querySelector('.show-button2');
+        const hideButton2 = document.querySelector('.hide-button2');
         let cardsToShow = servicesListCards.length; // Изначально отображаем все элементы
         let cardsToShow2 = servicesCardsList.length; // Изначально отображаем все элементы
 
@@ -85,6 +116,14 @@ const servicesList = document.querySelector('.services__list');
             hideButton.style.display = 'block'; // Показываем кнопку "Скрыть"
         }
 
+        // Функция для отображения всех элементов
+        function showAllCards2() {
+            cardsToShow2 = servicesCardsList.length; // Показываем все элементы
+            displayCards2();
+            showButton2.style.display = 'none'; // Скрываем кнопку "Показать все"
+            hideButton2.style.display = 'block'; // Показываем кнопку "Скрыть"
+        }
+
         // Функция для скрытия лишних элементов
         function hideExtraCards() {
             if (window.matchMedia('(min-width: 768px)').matches) {
@@ -98,8 +137,24 @@ const servicesList = document.querySelector('.services__list');
             hideButton.style.display = 'none'; // Скрываем кнопку "Скрыть"
         }
 
+        // Функция для скрытия лишних элементов
+        function hideExtraCards2() {
+            if (window.matchMedia('(min-width: 768px)').matches) {
+                cardsToShow2 = 3; // Отображаем только 6 элементов по умолчанию
+            }
+            if (window.matchMedia('(min-width: 1120px)').matches) {
+                cardsToShow2 = 4; // Отображаем только 8 элементов по умолчанию
+            }
+            displayCards2();
+            showButton2.style.display = 'block'; // Показываем кнопку "Показать все"
+            hideButton2.style.display = 'none'; // Скрываем кнопку "Скрыть"
+        }
+
         // Вызываем функцию displayCards() при загрузке страницы
         displayCards();
+
+        // Вызываем функцию displayCards() при загрузке страницы
+        displayCards2();
 
         // Медиа-запрос для экранов шириной 320px
         if (window.matchMedia('(min-width: 320px)').matches) {
@@ -112,6 +167,10 @@ const servicesList = document.querySelector('.services__list');
         if (window.matchMedia('(min-width: 768px)').matches) {
           cardsToShow = 6; // Отображаем только 6 элементов по умолчанию
           hideExtraCards(); // Скрываем лишние элементы
+        }
+        if (window.matchMedia('(min-width: 768px)').matches) {
+            cardsToShow2 = 3; // Отображаем только 6 элементов по умолчанию
+            hideExtraCards2(); // Скрываем лишние элементы
         }
         // Медиа-запрос для экранов шириной 1120px
         if (window.matchMedia('(min-width: 1120px)').matches) {
