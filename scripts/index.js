@@ -15,10 +15,15 @@ exit.addEventListener('click', function(){
 })
 
 let btnCallBack = document.getElementById('showCallback');
+let btnCallBacks = document.getElementById('showsCallback');
 let callback = document.querySelector('.callback');
 let closedCallback = document.getElementById('closedCallback');
 
 btnCallBack.addEventListener('click', function(){
+    callback.classList.remove('callback');
+    callback.classList.add('callback__active');
+})
+btnCallBacks.addEventListener('click', function(){
     callback.classList.remove('callback');
     callback.classList.add('callback__active');
 })
@@ -29,15 +34,21 @@ closedCallback.addEventListener('click', function(){
 })
 
 let btnCall = document.getElementById('callShow');
+let btnCalls = document.getElementById('callShows');
 let call = document.querySelector('.call');
 let closedCall = document.getElementById('callClosed');
 
-btnCallBack.addEventListener('click', function(){
+btnCall.addEventListener('click', function(){
     call.classList.remove('call');
     call.classList.add('call__active');
 })
 
-closedCallback.addEventListener('click', function(){
+btnCalls.addEventListener('click', function(){
+    call.classList.remove('call');
+    call.classList.add('call__active');
+})
+
+closedCall.addEventListener('click', function(){
     call.classList.remove('call__active');
     call.classList.add('call');
 })
