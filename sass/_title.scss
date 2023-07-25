@@ -1,7 +1,16 @@
+@import 'media';
 .title {
     width: 320px;
     padding-left: 16px;
-
+    @include iPad {
+        width: 767px;
+    }
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1104px;
+    }
     &__text {
         color: #1B1C21;
         font-size: 28px;
@@ -10,8 +19,18 @@
         line-height: 40px;
         letter-spacing: -0.6px;
     }
-
     &__nav {
         display: none;
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &_item2 {
+            margin-left: 8px;
+        }
+        &_item3 {
+            margin: 0 8px 0 20px;
+        }
     }
 }

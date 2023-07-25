@@ -1,20 +1,40 @@
+@import 'media';
 .info {
     margin-bottom: 32px;
     padding-left: 16px;
-
+    @include iPad {
+        display: flex;
+        align-items: center;
+    }
+    @include desktop {
+        align-items: start;
+    }
     &__text {
         width: 288px;
         flex: 1 50%;
         font-size: 14px;
         line-height: 20px;
         margin-right: 32px;
+        @include iPad {
+            width: 368px;
+            margin-right: 18px;
+        }
+        @include desktop {
+            width: 490px;
+            margin-right: 18px;
+        }
     }
     &__img {
         flex: 1 50%;
         width: 320px;
     }
-    
     &__img_size {
         width: 288px;
+        @include iPad {
+            width: 360px;
+        }
+        @include desktop {
+            width: 531px;
+        }
     }
 }

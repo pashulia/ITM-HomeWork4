@@ -1,78 +1,45 @@
+@import 'variables';
+@import 'media';
 .burger {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 100%;
-    width: 320px;
-    background-color: #fff;
-    right: -100%;
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    -o-transition: 0.8s;
-    transition: 0.8s;
+    @extend %burger;
     transform: translateX(-100%);
-    transition: transform 0.5s;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px;
-    padding: 23px 24px 32px;
-    
-    &__active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        height: 100%;
-        width: 320px;
-        background-color: #fff;
-        right: -100%;
-        -webkit-transition: 0.8s;
-        -moz-transition: 0.8s;
-        -o-transition: 0.8s;
-        transition: 0.8s;
+    @include desktop {
         transform: translateX(0);
-        transition: transform 0.5s;
-        box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px;
-        padding: 23px 24px 32px;
     }
-    
+    &__active {
+        @extend .burger;
+        transform: translateX(0);
+    }
     &__header {
         margin: 0 5px 16px 0;
     }
-    
     &__header-nav {
-        display: flex;
-        background: #fff;
-        align-items: center;
-        justify-content: space-between;
+        @extend %flex_center;
+        background: $white;
     }
-    
     &__header-nav_search:hover {
         transition: 5s;
         filter: blur(20px);
     }
-    &__header-nav_exit:hover {
+    &__header-nav_exit {
+        @include desktop {
+            display: none;
+        }
+        &:hover {
         transition: 3s;
         filter:hue-rotate(500deg);
     }
-    
+    }
     &__content-title {
         color: #7E7E82;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
+        @include font-style(16px, 500, 24px, -0.2px);
         width: 100%;
         margin-bottom: 8px;
     }
     &__content-nav_text {
         text-decoration: none;
-        color: #1B1C21;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
+        color: $black_text;
+        @include font-style(16px, 500, 24px, -0.2px);
     }
     &__content-nav_link {
         margin-bottom: 8px;
@@ -94,22 +61,13 @@
             filter: grayscale(100%);
         }
     }
-    
     &__footer-email_link {
-        color: #1B1C21;
-        font-family: TT Lakes;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
+        color: $black_text;
+        @include font-style(16px, 500, 24px, -0.2px);
+
     }
     &__footer-phone_link {
-        color: #1B1C21;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 32px;
-        letter-spacing: -0.6px;
+        color: $black_text;
+        @include font-style(24px, 700, 32px, -0.6px);
     }
 }
