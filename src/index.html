@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomeWork4(Pavel Khegay)</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                <div class="nav__burger" id="show">
+                    <img src="./assets/images/burger.svg" alt="burger">
+                </div>
+                <div class="nav__logo">
+                    <img src="./assets/images/Logo.svg" alt="logo">
+                </div>
+                <div class="nav__phone" id="callShow">
+                    <img src="./assets/images/call.svg" alt="call">
+                </div>
+                <div class="nav__chat" id="showCallback">
+                    <img src="./assets/images/chat.svg" alt="chat">
+                </div>
+                <div class="nav__user">
+                    <img src="./assets/images/profile.svg" alt="profile">
+                </div>
+                <div class="nav__repairs">
+                    <img src="./assets/images/repair.svg" alt="repair">
+                </div>
+                <div class="nav__status">
+                    <img src="./assets/images/checkstatus.svg" alt="checkstatus">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section>
+                <div class="burger">
+                    <header class="burger__header">
+                        <div class="burger__header-nav">
+                            <div class="burger__header-nav_exit" id="exit">
+                                <img src="./assets/images/close.svg" alt="close">
+                            </div>
+                            <div class="burger__header-nav_logo">
+                                <img src="./assets/images/Logo.svg" alt="logo">
+                            </div>
+                            <div class="burger__header-nav_search">
+                                <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ic/search">
+                                        <rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
+                                        <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M23.5006 22.0006H22.7106L22.4306 21.7306C23.6306 20.3306 24.2506 18.4206 23.9106 16.3906C23.4406 13.6106 21.1206 11.3906 18.3206 11.0506C14.0906 10.5306 10.5306 14.0906 11.0506 18.3206C11.3906 21.1206 13.6106 23.4406 16.3906 23.9106C18.4206 24.2506 20.3306 23.6306 21.7306 22.4306L22.0006 22.7106V23.5006L26.2606 27.7506C26.6706 28.1606 27.3306 28.1606 27.7406 27.7506L27.7506 27.7406C28.1606 27.3306 28.1606 26.6706 27.7506 26.2606L23.5006 22.0006ZM17.5006 22.0006C15.0106 22.0006 13.0006 19.9906 13.0006 17.5006C13.0006 15.0106 15.0106 13.0006 17.5006 13.0006C19.9906 13.0006 22.0006 15.0106 22.0006 17.5006C22.0006 19.9906 19.9906 22.0006 17.5006 22.0006Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="burger__content">
+                        <div class="burger__content-title">Ремонт техники</div>
+                        <div class="content__nav">
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Услуги и сервисы</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Корпоративным клиентам</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Продавцам техники</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Партнёрам</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Производителям</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Наши сервисные центры</a>
+                            </div>
+                            <div class="burger__content-nav_link">
+                                <a class="burger__content-nav_text" href="">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="burger__footer">
+                        <div class="burger__footer-nav">
+                            <div class="burger__footer-nav_link" id="callShows">
+                                <img src="./assets/images/call.svg" alt="call">
+                            </div>
+                            <div class="burger__footer-nav_link" id="showsCallback">
+                                <img src="./assets/images/chat.svg" alt="chat">
+                            </div>
+                            <div class="burger__footer-nav_link">
+                                <img src="./assets/images/profile.svg" alt="profile">
+                            </div>
+                        </div>
+                        <p class="burger__footer-email_link">
+                            mail@cps.com
+                        </p>
+                        <p class="burger__footer-phone_link">
+                            8 800 890 8900
+                        </p>
+                        <div class="burger__footer-radio_lang">
+                            <input type="radio" name="lang" value="ru" id="ru"/>
+                            <label for="ru" id="label1">RU</label>
+                            <input type="radio" name="lang" value="en" id="en"/>
+                            <label for="en" id="label2">en</label>
+                            <input type="radio" name="lang" value="ch" id="ch"/>
+                            <label for="ch" id="label3">ch</label>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section>
+                <div class="callback">
+                    <div class="callback__title" id="closedCallback">
+                        <img src="./assets/images/close.svg" alt="close">
+                        <p>Обратная связь</p>
+                    </div>
+                    <div class="callback_form">
+                        <form action="handler">
+                            <input class="callback__form-input" type="text" placeholder="Имя">
+                            <input class="callback__form-input" type="tel" placeholder="Телефон">
+                            <input class="callback__form-input" type="email" placeholder="Электронная почта">
+                            <textarea class="callback__form-input" placeholder="Сообщение"></textarea>
+                            <p class="callback__form-warning">
+                                Нажимая "отправить", вы даете согласие на
+                                <span style="color: red">обработку персональных данных</span>
+                                и соглашаетесь с нашей
+                                <span style="color: red">политикой конфеденциальности</span>
+                            </p>
+                            <img src="./assets/images/Group 10.svg" alt="send">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="call">
+                    <div class="call__title">
+                        <img src="./assets/images/close.svg" alt="close" id="callClosed">
+                        <p>Заказать звонок</p>
+                    </div>
+                    <div class="call_form">
+                        <form action="handler">
+                            <input class="call__form-input" type="tel" placeholder="Телефон">
+                            <p class="call__form-warning">
+                                Нажимая "отправить", вы даете согласие на
+                                <span style="color: red">обработку персональных данных</span>
+                                и соглашаетесь с нашей
+                                <span style="color: red">политикой конфеденциальности</span>
+                            </p>
+                            <img src="./assets/images/Group 10.svg" alt="send">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="title">
+                    <h1 class="title__text">Услуги и сервисы</h1>
+                    <div class="title__nav">
+                        <div class="title__nav_item1">Оставить заявку</div>
+                        <div class="title__nav_item2">
+                            <img src="./assets/images/repair.svg" alt="repair">
+                        </div>
+                        <div class="title__nav_item3">Статус ремонта</div>
+                        <div class="title__nav_item4">
+                            <img src="./assets/images/checkstatus.svg" alt="checkstatus">
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <section class="scroll__card">
+                        <div class="scroll__card_content">Ремонтируемые бренды</div>
+                        <div class="scroll__card_content">Ремонтируемые устройства</div>
+                        <div class="scroll__card_content">Дополнительные услуги</div>
+                        <div class="scroll__card_content">Цены на услуги</div>
+                        <div class="scroll__card_content">Адреса сервисных центров</div>
+                        <div class="scroll__card_content">Специальные цены</div>
+                    </section>
+                </div>
+                <div class="info">
+                    <p class="info__text">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                                            Только у нас вы можете отремонтировать свой ноутбук Dell c официальной 
+                                            гарантией производителя. Мы успешно работаем с 1992 года й заслужили 
+                                            репутацию надежного партнера, что подтверждает большое количество 
+                                            постоянных клиентов. Мы гордимся тем, что к нам обращаются по 
+                                            рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                    <div class="info__img">
+                        <img class="info__img_size" src="assets/images/photoCPS.jpg" alt="photo">
+                    </img>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services__title">
+                    <span class="services__title_text">ремонт техники различных брендов</span>
+                </div>
+                <div class="services__list">
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a href="/">
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="services__list_card">
+                        <img src="./assets/images/Lenovo.svg" alt="lenovo">
+                        <a>
+                            <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="ic/go">
+                                    <rect id="back" x="1" y="1" width="38" height="38" rx="19" stroke="#FF3E79" stroke-width="2"/>
+                                    <path id="dropdown" fill-rule="evenodd" clip-rule="evenodd" d="M21.5 20L17.7071 16.2071C17.3166 15.8166 17.3166 15.1834 17.7071 14.7929L17.7929 14.7071C18.1834 14.3166 18.8166 14.3166 19.2071 14.7071L23.7929 19.2929C24.1834 19.6834 24.1834 20.3166 23.7929 20.7071L19.2071 25.2929C18.8166 25.6834 18.1834 25.6834 17.7929 25.2929L17.7071 25.2071C17.3166 24.8166 17.3166 24.1834 17.7071 23.7929L21.5 20Z" fill="#FF3E79"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="services__nav">
+                    <input type="radio" name="slider" title="slide1" checked="checked" class="services__list_nav" onclick="scrollCarousel(1)"/>
+                    <input type="radio" name="slider" title="slide2" class="services__list_nav" onclick="scrollCarousel(2)"/>
+                    <input type="radio" name="slider" title="slide3" class="services__list_nav" onclick="scrollCarousel(3)"/>
+                    <input type="radio" name="slider" title="slide4" class="services__list_nav" onclick="scrollCarousel(4)"/>
+                    <input type="radio" name="slider" title="slide5" class="services__list_nav" onclick="scrollCarousel(5)"/>
+                    <input type="radio" name="slider" title="slide6" class="services__list_nav" onclick="scrollCarousel(6)"/>
+                    <input type="radio" name="slider" title="slide7" class="services__list_nav" onclick="scrollCarousel(7)"/>
+                    <input type="radio" name="slider" title="slide8" class="services__list_nav" onclick="scrollCarousel(8)"/>
+                    <input type="radio" name="slider" title="slide9" class="services__list_nav" onclick="scrollCarousel(9)"/>
+                    <input type="radio" name="slider" title="slide10" class="services__list_nav" onclick="scrollCarousel(10)"/>
+                    <input type="radio" name="slider" title="slide11" class="services__list_nav" onclick="scrollCarousel(11)"/>
+                </div>
+                <div class="services__list_buttons">
+                    <button class="show-button" id="list_show">Показать все</button>
+                    <button class="hide-button" id="list_close">Скрыть</button>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services__title">
+                    <span class="services__title_text">ремонт различных видов техники</span>
+                </div>
+                <div class="services__cards">
+                    <div class="services__cards-item">
+                        <span>Ремонт ноутбуков</span>
+                        <div class="services__cards-item_link">
+                            <img src="./assets/images/go.svg" alt="go">
+                        </div>
+                    </div>
+                    <div class="services__cards-item">
+                        <span>Ремонт планшетов</span>
+
+                        <div class="services__cards-item_link">
+                            <img src="./assets/images/go.svg" alt="go">
+                        </div>
+                    </div>
+                    <div class="services__cards-item">
+                        <span>Ремонт ПК</span>
+
+                        <div class="services__cards-item_link">
+                            <img src="./assets/images/go.svg" alt="go">
+                        </div>
+                    </div>
+                    <div class="services__cards-item">
+                        <span>Ремонт мониторов</span>
+
+                        <div class="services__cards-item_link">
+                            <img src="./assets/images/go.svg" alt="go">
+                        </div>
+                    </div>
+                </div>
+                <div class="services__nav">
+                    <input type="radio" name="slider" title="slide1" checked="checked" class="services__list_nav" onclick="scrollCarousel2(1)"/>
+                    <input type="radio" name="slider2" title="slide2" class="services__list_nav" onclick="scrollCarousel2(2)"/>
+                    <input type="radio" name="slider2" title="slide3" class="services__list_nav" onclick="scrollCarousel2(3)"/>
+                    <input type="radio" name="slider2" title="slide4" class="services__list_nav" onclick="scrollCarousel2(4)"/>
+                </div>
+                <div class="services__list_buttons2">
+                    <button class="show-button2" id="cards_show">Показать все</button>
+                    <button class="hide-button2" id="cards_close"">Скрыть</button>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services__title">
+                    <span class="services__title_text">цены на услуги</span>
+                </div>
+                <div class="services__price">
+                    <div class="services__cards-price">
+                        <span>Ремонтные услуги<br>Тестирование с выдачей технического заключения</span>
+                        <p>Цена<br><span>Бесплатно</span>
+                        </p>
+                        <div class="services__cards_flex">
+                            <p>Срок<br><span>30-120 мин</span>
+                            </p>
+                            <div>
+                                <img src="./assets/images/order.svg" alt="order">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__cards-price">
+                        <span>Ремонтные услуги<br>Тестирование с выдачей технического заключения</span>
+                        <p>Цена<br><span>Бесплатно</span>
+                        </p>
+                        <div class="services__cards_flex">
+                            <p>Срок<br><span>30-120 мин</span>
+                            </p>
+                            <div>
+                                <img src="./assets/images/order.svg" alt="order">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__cards-price">
+                        <span>Ремонтные услуги<br>Тестирование с выдачей технического заключения</span>
+                        <p>Цена<br><span>Бесплатно</span>
+                        </p>
+                        <div class="services__cards_flex">
+                            <p>Срок<br><span>30-120 мин</span>
+                            </p>
+                            <div>
+                                <img src="./assets/images/order.svg" alt="order">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__cards-price">
+                        <span>Ремонтные услуги<br>Тестирование с выдачей технического заключения</span>
+                        <p>Цена<br><span>Бесплатно</span>
+                        </p>
+                        <div class="services__cards_flex">
+                            <p>Срок<br><span>30-120 мин</span>
+                            </p>
+                            <div>
+                                <img src="./assets/images/order.svg" alt="order">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__cards-price">
+                        <span>Ремонтные услуги<br>Тестирование с выдачей технического заключения</span>
+                        <p>Цена<br><span>Бесплатно</span>
+                        </p>
+                        <div class="services__cards_flex">
+                            <p>Срок<br><span>30-120 мин</span>
+                            </p>
+                            <div>
+                                <img src="./assets/images/order.svg" alt="order">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__nav">
+                    <input type="radio" name="slider3" title="slide1" checked="checked" class="services__list_nav" onclick="scrollCarousel3(1)"/>
+                    <input type="radio" name="slider3" title="slide2" class="services__list_nav" onclick="scrollCarousel3(2)"/>
+                    <input type="radio" name="slider3" title="slide3" class="services__list_nav" onclick="scrollCarousel3(3)"/>
+                    <input type="radio" name="slider3" title="slide4" class="services__list_nav" onclick="scrollCarousel3(4)"/>
+                    <input type="radio" name="slider3" title="slide5" class="services__list_nav" onclick="scrollCarousel3(5)"/>
+                </div>
+                <div class="services__container-list">
+                    <div class="services__container-list_card">
+                        <span>Ремонтные услуги</span>
+                        <span>цена</span>
+                        <span>срок</span>
+                    </div>
+                    <div class="services__container-list_card">
+                        <span>Диагностика</span>
+                        <span>Бесплатно</span>
+                        <span>30 мин</span>
+                        <a>
+                            <img src="./assets/images/order.svg" alt="order">
+                        </a>
+                    </div>
+                    <div class="services__container-list_card">
+                        <span>Замена дисплея</span>
+                        <span>1000 р</span>
+                        <span>30-120 мин</span>
+                        <a>
+                            <img src="./assets/images/order.svg" alt="order">
+                        </a>
+                    </div>
+                    <div class="services__container-list_card">
+                        <span>Замена полифонического динамика</span>
+                        <span>1000 р</span>
+                        <span>30-120 мин</span>
+                        <a>
+                            <img src="./assets/images/order.svg" alt="order">
+                        </a>
+                    </div>
+                    <div class="services__container-list_card">
+                        <span>Тестирование с выдачей технического заключения</span>
+                        <span>1000 р</span>
+                        <span>30-120 мин</span>
+                        <a>
+                            <img src="./assets/images/order.svg" alt="order">
+                        </a>
+                    </div>
+                    <div class="services__container-list_card">
+                        <span>Замена программного обеспечения</span>
+                        <span>1000 р</span>
+                        <span>30-120 мин</span>
+                        <a>
+                            <img src="./assets/images/order.svg" alt="order">
+                        </a>
+                    </div>
+                </div>
+                <div class="services__tab">
+                    <table class="services__tab_border-collapse">
+                        <tr>
+                            <th class="services__tab_border">Ремонтные услуги</th>
+                            <th class="services__tab_border">Цена</th>
+                            <th class="services__tab_border">Срок</th>
+                            <th class="services__tab_border">&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td class="services__tab_border">Диагностика</td>
+                            <td class="services__tab_border">Бесплатно</td>
+                            <td class="services__tab_border">30 мин</td>
+                            <td class="services__tab_border">
+                                <img src="./assets/images/order.svg" alt="order">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="services__tab_border">Замена дисплея</td>
+                            <td class="services__tab_border">1000 Р</td>
+                            <td class="services__tab_border">30-120 мин</td>
+                            <td class="services__tab_border">
+                                <img src="./assets/images/order.svg" alt="order">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="services__tab_border">Замена полифонического динамика</td>
+                            <td class="services__tab_border">1000 Р</td>
+                            <td class="services__tab_border">30-120 мин</td>
+                            <td class="services__tab_border">
+                                <img src="./assets/images/order.svg" alt="order">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="services__tab_border">Тестирование с выдачей технического заключения</td>
+                            <td class="services__tab_border">1000 Р</td>
+                            <td class="services__tab_border">30-120 мин</td>
+                            <td class="services__tab_border">
+                                <img src="./assets/images/order.svg" alt="order">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="services__tab_border">Замена программного обеспечения</td>
+                            <td class="services__tab_border">1000 Р</td>
+                            <td class="services__tab_border">30-120 мин</td>
+                            <td class="services__tab_border">
+                                <img src="./assets/images/order.svg" alt="order">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="content-info">
+                <span class="content-info__text">
+                    Все цены указаны с учётом НДС. Стоимость ремонта указана на еденичную услугу. Для получения комерческого предложения на постоянное обслуживание, оставте заявку.
+                </span>
+                <div class="content-info__btn">
+                    <span>
+                        <b>Получить коммерческое предложение
+                            <span style="color: red">
+                                ></span>
+                        </b>
+                    </span>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__block_first">
+                    <span>@ 2019 CPS<br>Разработано командой Apesong</span>
+                </div>
+                <p>Политика конфиденциальности</p>
+                <div class="footer__block_last">
+                    <span>Информация, размещённая на данной странице, не является публичной офёртой</span>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

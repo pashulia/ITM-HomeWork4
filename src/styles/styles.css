@@ -1,3 +1,4 @@
+@import "~normalize.css";
 @font-face {
   font-family: "TT Lakes";
   src: url("../assets/fonts//TT Lakes Regular.ttf") format("truetype");
@@ -163,7 +164,7 @@ html, body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 8;
+  z-index: 13;
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
   -o-transition: 0.8s;

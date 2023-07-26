@@ -1,3 +1,4 @@
+@import "~normalize.css";
 @font-face {
     font-family: 'TT Lakes';
     src: url("../assets/fonts//TT\ Lakes\ Regular.ttf") format("truetype");
@@ -9,7 +10,6 @@ html, body {
     height: 100%;
     font-family: 'TT Lakes';
     background-color: #f8f8f8;
-
 }
 @import "header";
 @import "burger";
